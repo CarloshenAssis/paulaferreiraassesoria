@@ -116,6 +116,14 @@ section{ padding: 96px 0; }
   background: var(--gold); transition: width .2s ease;
 }
 .nav-links a:hover::after{ width:100%; }
+.nav-links a.active{ color: var(--gold-dark); }
+.nav-links a.active::after{ width:100%; }
+
+/* ---------- Teasers (home page) ---------- */
+.teaser-head{ display:flex; justify-content:space-between; align-items:flex-end; gap:24px; flex-wrap:wrap; margin-bottom:40px; }
+.section-link{ font-weight:700; font-size:.92rem; color: var(--navy); display:inline-flex; align-items:center; gap:6px; white-space:nowrap; }
+.section-link svg{ width:16px; height:16px; transition: transform .2s ease; }
+.section-link:hover svg{ transform: translateX(3px); }
 .nav-cta{ display:flex; align-items:center; gap:14px; }
 .nav-links .nav-mobile-cta{ display:none; }
 .nav-toggle{
