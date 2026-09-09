@@ -371,14 +371,9 @@ section{ padding: 96px 0; }
 .article-card:hover{ transform: translateY(-4px); }
 .article-card .thumb{
   aspect-ratio: 16/10; display:flex; align-items:center; justify-content:center;
-  background: linear-gradient(140deg, var(--navy), var(--navy-soft));
+  background: var(--bg-soft); padding: 18px; overflow:hidden;
 }
-.article-card:nth-child(2) .thumb{ background: linear-gradient(140deg, var(--gold-dark), var(--gold)); }
-.article-card:nth-child(3) .thumb{ background: linear-gradient(140deg, #3a5a70, var(--navy)); }
-.article-card:nth-child(4) .thumb{ background: linear-gradient(140deg, var(--gold), var(--gold-dark)); }
-.article-card:nth-child(5) .thumb{ background: linear-gradient(140deg, var(--navy-soft), var(--navy-dark)); }
-.article-card:nth-child(6) .thumb{ background: linear-gradient(140deg, var(--gold-dark), var(--navy)); }
-.article-card .thumb svg{ width:34px; height:34px; color: rgba(255,255,255,.85); }
+.article-card .thumb img{ width:100%; height:100%; object-fit:contain; }
 .article-card .body{ padding: 24px 24px 26px; display:flex; flex-direction:column; flex:1; }
 .article-tag{ font-size:.72rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color: var(--gold-dark); margin-bottom:10px; }
 .article-card h3{ font-family:'Inter',sans-serif; font-size:1.05rem; font-weight:700; margin-bottom:10px; }
